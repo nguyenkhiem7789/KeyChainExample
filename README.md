@@ -13,3 +13,15 @@ https://github.com/evgenyneu/keychain-swift
     Apple recommends storing only small amount of data in the Keychain. If you need to secure something big you can 
     encrypt it manually, save 
     to a file and store the key in the Keychain.
+
+# HOW TO USE IT?
+
+    pod 'KeychainSwift'
+  
+Save a text: 
+ 
+     keychain.set(startText, forKey: MY_NAME_KEY)
+     
+Get a text:
+
+    let name = keychain.get(MY_NAME_KEY)
